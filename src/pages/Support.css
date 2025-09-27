@@ -1,97 +1,95 @@
+/* ===== Support Page Styling ===== */
 .support-page {
-  background: linear-gradient(135deg, #f1f8e9, #e8f5e9);
-  padding: 50px 20px;
-  max-width: 1100px;
-  margin: 40px auto;
-  border-radius: 12px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e9f5ec, #f7fff9);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .support-page h1 {
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #1b5e20;
-  margin-bottom: 15px;
+  color: #2e7d32;
+  margin-bottom: 10px;
 }
 
-.support-page .subtitle {
+.subtitle {
   font-size: 1.1rem;
-  color: #444;
+  color: #555;
   margin-bottom: 40px;
 }
 
+/* ===== Grid Layout ===== */
 .support-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
-  margin-bottom: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+/* ===== Card Styling ===== */
 .support-card {
-  background: #ffffff;
-  border-radius: 12px;
+  background: #fff;
+  border-radius: 15px;
   padding: 25px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  text-align: center;
-  border-top: 5px solid #4caf50;
 }
 
 .support-card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .support-card h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  color: #2e7d32;
+  font-size: 1.5rem;
+  color: #1b5e20;
+  margin-bottom: 12px;
 }
 
 .support-card p {
   font-size: 1rem;
-  color: #333;
   font-weight: 500;
-  margin-bottom: 5px;
+  color: #333;
+  margin: 5px 0;
 }
 
 .support-card span {
+  display: block;
   font-size: 0.9rem;
-  color: #666;
+  color: #777;
+  margin-top: 5px;
 }
 
-.cta-box {
-  background: #4caf50;
+/* ===== Back Button ===== */
+.back-btn {
+  margin-top: 40px;
+  padding: 12px 24px;
+  background: #2e7d32;
   color: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.cta-box h3 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-
-.cta-box p {
-  margin-bottom: 15px;
   font-size: 1rem;
-}
-
-.chat-btn {
-  background: white;
-  color: #2e7d32;
-  padding: 12px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 8px;
   border: none;
+  border-radius: 30px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
 
-.chat-btn:hover {
-  background: #e8f5e9;
-  transform: scale(1.05);
+.back-btn:hover {
+  background: #1b5e20;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .support-page h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .support-card {
+    padding: 20px;
+  }
 }
