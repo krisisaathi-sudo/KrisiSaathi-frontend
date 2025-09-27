@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./Support.css";
 
 const Support = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
   return (
     <div className="support-page">
       <h1>Farmer Support Center</h1>
@@ -20,7 +21,7 @@ const Support = () => {
 
         <div className="support-card">
           <h2>📧 Email</h2>
-          <p>BugHunters@gmail.com.com</p>
+          <p>BugHunters@gmail.com</p>
           <span>Send us your concerns anytime</span>
         </div>
 
@@ -31,12 +32,10 @@ const Support = () => {
         </div>
       </div>
 
-      {/* <div className="cta-box">
-        <h3>💬 Need Instant Help?</h3>
-        <p>Try our <strong>AI Chatbot</strong> for quick answers related to farming.</p>
-        <button className="chat-btn" onClick={() => navigate("/chatbotPage")}>
-          Open Chatbot</button>
-      </div> */}
+      {/* Optional Back to Home Button */}
+      <button className="back-btn" onClick={() => navigate("/")}>
+        ⬅ Back to Home
+      </button>
     </div>
   );
 };
