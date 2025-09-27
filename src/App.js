@@ -11,7 +11,6 @@ import Services from "./pages/Services";
 import Support from "./pages/Support";
 import Login from "./pages/Login";
 import Register from"./pages/Register";
-import ChatbotPage from "./pages/ChatbotPage";
 // Service detail pages
 import Soil from "./pages/services/Soil";
 import Weather from "./pages/services/Weather";
